@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Orderdetail extends Model
 {
-    protected $table = 'productlines';
+    protected $table = 'orderdetails';
     public $timestamps = false;
     protected $dateFormat = 'U';
 

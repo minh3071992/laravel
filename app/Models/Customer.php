@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
-    protected $table = 'productlines';
+    protected $table = 'customers';
     public $timestamps = false;
     protected $dateFormat = 'U';
 
