@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Office extends Model
 {
-    protected $table = 'productlines';
+    protected $table = 'offices';
     public $timestamps = false;
     protected $dateFormat = 'U';
 
