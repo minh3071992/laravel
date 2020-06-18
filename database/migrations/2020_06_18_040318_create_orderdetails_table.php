@@ -18,7 +18,7 @@ class CreateOrderdetailsTable extends Migration
             $table->foreignId('orderNumber');
             $table->foreignId('productCode');
             $table->bigInteger('quantityOrder');
-            $table->integer('oderLineNumber')->unique;
+            $table->integer('orderLineNumber')->unique;
             $table->timestamps();
         });
     }
