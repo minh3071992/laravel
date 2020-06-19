@@ -16,14 +16,14 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('productCode', 100)->unique;
-            $table->string('productName', 100)->nullable;
+            $table->string('productName', 100);
             $table->foreignId('productLine');
-            $table->string('productScale', 100)->nullable;
-            $table->string('productVendor', 100)->nullable;
-            $table->string('productDescription', 100)->nullable;
-            $table->bigInteger('quantityInStock')->nullable;
-            $table->float('buyPrice', 10, 2)->nullable;
-            $table->string('MSRP', 100)->nullable;
+            $table->string('productScale', 100);
+            $table->string('productVendor', 100);
+            $table->string('productDescription', 100);
+            $table->bigInteger('quantityInStock');
+            $table->float('buyPrice', 10, 2);
+            $table->string('MSRP', 100);
             $table->timestamps();
         });
     }

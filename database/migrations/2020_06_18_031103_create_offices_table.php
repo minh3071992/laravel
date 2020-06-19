@@ -16,14 +16,14 @@ class CreateOfficesTable extends Migration
         Schema::create('offices', function (Blueprint $table) {
             $table->id();
             $table->string("officeCode", 100)->unique;
-            $table->string('city', 100)->nullable;
-            $table->string('phone', 100)->nullable;
-            $table->string('addressLine1', 250)->nullable;
-            $table->string('addressLine2', 250)->nullable;
-            $table->string('state', 100)->nullable;
-            $table->string('country', 100)->nullable;
-            $table->string('postalCode', 100)->nullable;
-            $table->string('territory', 100)->nullable; 
+            $table->string('city', 100);
+            $table->string('phone', 100);
+            $table->string('addressLine1', 250);
+            $table->string('addressLine2', 250);
+            $table->string('state', 100);
+            $table->string('country', 100);
+            $table->string('postalCode', 100);
+            $table->string('territory', 100); 
             $table->timestamps();
         });
     }

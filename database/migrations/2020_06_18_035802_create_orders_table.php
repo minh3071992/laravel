@@ -17,8 +17,8 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('orderNumber', 100)->unique;
             $table->date('orderDate');
-            $table->date('requiredDate')->nullable;
-            $table->date('shippedDate')->nullable;
+            $table->date('requiredDate');
+            $table->date('shippedDate');
             $table->string('status', 50);
             $table->string('comments', 200);
             $table->foreignId('customerNumber');

@@ -16,8 +16,8 @@ class CreateProductlinesTable extends Migration
         Schema::create('productlines', function (Blueprint $table) {
             $table->id();
             $table->string('productlines', 100)->unique;
-            $table->string('textDescription', 100)->nullable;
-            $table->string('htmlDescription', 100)->nullable;
+            $table->string('textDescription', 100);
+            $table->string('htmlDescription', 100);
             $table->string('image', 200);
             $table->timestamps();
         });

@@ -15,14 +15,14 @@ class CreateEmployeesTable extends Migration
     {
         Schema::create('employess', function (Blueprint $table) {
             $table->id();
-            $table->string('employeeNumber', 100)->unique;
-            $table->string('lastName', 100)->nullable;
-            $table->string('firstName', 100)->nullable;
-            $table->string('extension', 100)->nullable;
+            $table->string('employeeNumber', 100);
+            $table->string('lastName', 100);
+            $table->string('firstName', 100);
+            $table->string('extension', 100);
             $table->string('email', 100)->unique;
             $table->foreignId('officeCode');
             $table->foreignId('reportsTo');
-            $table->string('jobTitle', 100)->nullable;
+            $table->string('jobTitle', 100);
             $table->timestamps();
         });
     }
